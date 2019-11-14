@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="static/css/pastebin.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/paste.js"></script>
+    <title>Code Pastebin</title>
+</head>
+
+<body>
+<div id="outerColumnContainer" style="color: #000">
+    <div id="contentColumn">
+        <div class="inside">
+            <h1 id="title">Code Pastebin</h1>
+            <form action="/" method="POST" id="pasteform" name="pasteform" onsubmit="return check()">
+                <table>
+                    <tr>
+                        <td colspan="2" align="center">本页面使用<a href="https://pygments.org/">Pygments</a>进行代码格式化，你可以在下面粘贴你的代码，可指定Suffix参数根据文件后缀确定代码类型，格式化后选择你喜欢的代码样式，复制粘贴到文档当中即可,有问题请发邮件到837784756@qq.com
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="id_type">Syntax:</label></th>
+                        <td><select name="type" id="id_type">
+                            <option value="text">text</option>
+                            <option value="c">c</option>
+                            <option value="c++">c++</option>
+                            <option value="python">python</option>
+                            <option value="java">java</option>
+                            <option value="css">css</option>
+                            <option value="javascript">js</option>
+                            <option value="html">html</option>
+                            <option value="json">json</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <th><label for="id_suffix">Suffix:</label></th>
+                        <td><input id="id_suffix" name="suffix" placeholder=" .c/.cpp/.py/.java">
+                            <br><span>Suffix names must begin with '.' or lack thereof(可选参数,后缀名必须以'.'开头)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="id_content">Content:</label></th>
+                        <td><textarea name="content" id="id_content" rows="20" cols="80" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <td><input type="submit" value="Paste!"/></td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

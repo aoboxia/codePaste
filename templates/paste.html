@@ -1,0 +1,67 @@
+$def with (code, css, time)
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="../static/css/pastebin.css">
+    <link rel="stylesheet" href="$css">
+<!--    <link rel="stylesheet" href="../static/pygments14.css">-->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/paste.js"></script>
+    <title>Code Pastebin</title>
+</head>
+<body>
+<div id="outerColumnContainer" style="color: #000">
+    <div id="contentColumn">
+        <div class="inside">
+            <h1 id="title">Code Pastebin</h1>
+            <h1>Paste at $time</h1>
+            <table>
+                <tr>
+                    <th><label for="id_style">Style:</label></th>
+                    <td><select name="style" id="id_style">
+                        <option value="default">default</option>
+                        <option value="emacs">emacs</option>
+                        <option value="friendly">friendly</option>
+                        <option value="colorful">colorful</option>
+                        <option value="autumn">autumn</option>
+                        <option value="murphy">murphy</option>
+                        <option value="manni">manni</option>
+                        <option value="monokai">monokai</option>
+                        <option value="perldoc">perldoc</option>
+                        <option value="pastie">pastie</option>
+                        <option value="borland">borland</option>
+                        <option value="trac">trac</option>
+                        <option value="native">native</option>
+                        <option value="fruity">fruity</option>
+                        <option value="bw">bw</option>
+                        <option value="vim">vim</option>
+                        <option value="vs">vs</option>
+                        <option value="tango">tango</option>
+                        <option value="rrt">rrt</option>
+                        <option value="xcode">xcode</option>
+                        <option value="igor">igor</option>
+                        <option value="paraiso-light">paraiso-light</option>
+                        <option value="paraiso-dark">paraiso-dark</option>
+                        <option value="lovelace">lovelace</option>
+                        <option value="algol">algol</option>
+                        <option value="algol_nu">algol_nu</option>
+                        <option value="arduino">arduino</option>
+                        <option value="rainbow_dash">rainbow_dash</option>
+                        <option value="abap">abap</option>
+                        <option value="solarized-dark">solarized-dark</option>
+                        <option value="solarized-light">solarized-light</option>
+                        <option value="sas">sas</option>
+                        <option value="stata">stata</option>
+                        <option value="stata-light">stata-light</option>
+                        <option value="stata-dark">stata-dark</option>
+                    </select></td>
+                </tr>
+            </table>
+            <div class="paste">$:code</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

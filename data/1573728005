@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="./static/pastebin.css">
+    <title>Code Pastebin</title>
+</head>
+
+<body>
+    <div id="outerColumnContainer" style="color: #000">
+        <div id="contentColumn">
+            <div class="inside">
+                <h1 id="title">Code Pastebin</h1>
+                <form action="/" method="POST" id="pasteform" name="pasteform">
+                    <table>
+                        <tr>
+                            <td colspan="2" align="center">本页面使用<a href="https://pygments.org/">Pygments</a>进行代码格式化，你可以在下面粘贴你的代码，选择你喜欢的代码样式，格式化后复制粘贴到文档当中即可,有问题请发邮件到837784756@qq.com
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="id_syntax">Syntax:</label></th>
+                            <td><select name="syntax" id="id_syntax">
+                            
+                                    <option value="c">c</option>
+                                    <option value="c++">c++</option>
+                                    <option value="python">python</option>
+                                    <option value="java">java</option>
+                                    <option value="mysql">mysql</option>
+                                    <option value="text">text</option>
+                                    <option value="css">css</option>
+                                    <option value="javascript">js</option>
+                                    <option value="html">html</option>
+                            
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <th><label for="id_content">Content:</label></th>
+                            <td><textarea name="content" id="id_content" rows="30" cols="80" required>
+                            </textarea></td>
+                        </tr>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <td> <input type="submit" value="Paste!" /> </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
