@@ -7,18 +7,19 @@
     <link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="static/css/pastebin.css">
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="static/js/paste.js"></script>
-    <title>Code Pastebin</title>
+    <title>Tmad Paste</title>
 </head>
 
 <body>
 <div id="outerColumnContainer" style="color: #000">
     <div id="contentColumn">
         <div class="inside">
-            <h1 id="title">Code Pastebin</h1>
+            <h1 id="title">Tmad Paste</h1>
             <form action="/" method="POST" id="pasteform" name="pasteform" onsubmit="return check()">
                 <table>
                     <tr>
-                        <td colspan="2" align="center">本页面使用<a href="https://pygments.org/">Pygments</a>进行代码格式化，你可以在下面粘贴你的代码，可指定Suffix参数根据文件后缀确定代码类型，格式化后选择你喜欢的代码样式，复制粘贴到文档当中即可,有问题请发邮件到837784756@qq.com
+                        <td colspan="2" align="center">本页面使用<a href="https://pygments.org/">Pygments</a>进行代码格式化，你可以在下面粘贴你的代码，可指定Suffix参数根据文件后缀确定代码类型，格式化后选择你喜欢的代码样式，复制粘贴到文档当中即可,你可以在
+                            <a href="https://github.com/aoboxia/codePaste">Github</a>查看本网站的源代码，有问题给我留言(^-^)
                         </td>
                     </tr>
                     <tr>
@@ -26,7 +27,7 @@
                         <td><select name="type" id="id_type">
                             <option value="text">text</option>
                             <option value="c">c</option>
-                            <option value="c++">c++</option>
+                            <option value="cpp">c++</option>
                             <option value="python">python</option>
                             <option value="java">java</option>
                             <option value="css">css</option>
@@ -51,7 +52,6 @@
                     </tr>
                 </table>
             </form>
-
         </div>
     </div>
 </div>

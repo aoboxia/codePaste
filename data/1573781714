@@ -21,9 +21,9 @@ def trans(content, type, style, suffix):
             lexer = get_lexer_for_filename(suffix)
         except:
             lexer = get_lexer_by_name(type)
-    # 鎸囧畾椋庢牸
+    # 指定风格
     formatter = HtmlFormatter(style=style)
-    # 鑾峰彇html
+    # 获取html
     html = highlight(content, lexer, formatter)
     return html
 
