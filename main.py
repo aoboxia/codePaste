@@ -4,6 +4,8 @@ import time
 from pygments import highlight
 from pygments.formatters.html import HtmlFormatter
 from pygments.lexers import get_lexer_by_name, get_lexer_for_filename
+from web.template import ALLOWED_AST_NODES
+ALLOWED_AST_NODES.append('Constant')
 
 render = web.template.render('templates/')
 
