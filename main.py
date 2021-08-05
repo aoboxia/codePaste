@@ -1,5 +1,6 @@
 import web
 import time
+import os
 
 from pygments import highlight
 from pygments.formatters.html import HtmlFormatter
@@ -47,6 +48,8 @@ class index:
     def POST(self):
         form = web.input()
         file_id = (int)(time.time())
+        if not os.path.exists("./data/"):
+            os.makedirs("./data/")
         with open("./data/"+str(file_id), 'w', newline='') as f:
             f.write(form.content)
         raise web.seeother('/p/' + str(file_id) + '?type=' + form.type + '&suffix=' + form.suffix)
